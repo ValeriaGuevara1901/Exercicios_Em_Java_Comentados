@@ -1,0 +1,21 @@
+import java.util.Scanner;//a biblioteca que me dara acesso para ter teclado no caso o usuario digitar as coisas
+  public class Circunferencia //class
+    {
+
+      public static void main(String[] args) //void
+      {
+        //entrada de dados que o usuario quiser
+        Scanner Leitor = new Scanner (System.in);
+
+        //declração de variaveis eu prefiro declarar todas e não criar no caminho, fica no seu criterio 
+        double raio, area; // double é um real em pascal, reais são esse numero  9,25564 e 44555 tanto enteiro como decimais 
+        
+        //entrada de dados
+        System.out.println("Inserir o valor do raio: ");
+        raio = Leitor.nextDouble();
+
+        //operação a ser realizada 	
+        area = 2 *Math.PI* raio; // poderia delarar PI como variavei e atribuir o valor porém o java na sua biblioteca já tem o valor de pi 3,1415... que seria chamando *Math.PI*
+        System.out.println("O valor da circunferência é: "+ area);
+      }
+}
